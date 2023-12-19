@@ -1,0 +1,7 @@
+.swipe_container{
+    overflow: auto;
+}
+
+.swipebutton{
+    cursor: pointer;
+}

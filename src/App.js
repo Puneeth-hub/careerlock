@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import Navbar from './navbar';
+import Banner from './banner';
+import BoxComponent from './boxes';
+import Brain from "../src/images/brain.jpg";
+import Connecting from "../src/images/connectbrain.jpg";
+import Artifical from "../src/images/artifical.jpg";
+import MyFooter from './footer';
+
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+       <Navbar/>
+       <Banner/>
+    <div>
+       <BoxComponent
+         imageSrc={Brain}
+         title='Network conecpt'
+         description='The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles.'
+       />
+       <BoxComponent
+         imageSrc={Artifical}
+         title='Cyberware house'
+         description='The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles.'
+       />
+       <BoxComponent
+         imageSrc={Connecting}
+         title='Admintration Security'
+         description='The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles.'
+       />
+      </div>
+    <MyFooter/>
     </div>
   );
 }
