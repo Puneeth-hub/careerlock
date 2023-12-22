@@ -41,6 +41,17 @@
   
   .notification {
     margin-right: 20px;
+    position: relative;
+  }
+  .notification-indicator {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #06a7e7; 
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 50%;
   }
   
   .user-profile {
