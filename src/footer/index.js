@@ -5,10 +5,10 @@ import { BiLogoJquery } from "react-icons/bi";
 
 
 
-
 import './index.css'; 
 
-const MyFooter = () =>{
+const MyFooter = ({ isDarkMode }) =>{
+  
     return(
       
         <div>
@@ -19,7 +19,7 @@ const MyFooter = () =>{
            <p>Our Company Career Lock &copy; All rights reserved 2023..!</p><br/>
            
         </div>
-        <footer id="footer" data-testid='footer'>
+        <footer className="footer">
           <div className="main">
             <div className="icon">
               <svg height="80" width="80">

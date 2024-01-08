@@ -1,4 +1,8 @@
-
+body{
+  margin:0;
+  background-color: #092635; 
+  transition: background-color 0.3s ease;
+}
 
 .navbar {
     display: flex;
@@ -88,3 +92,43 @@
     background-color: beige;
     color: #092635;
  }
+ 
+ .settings {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   position: absolute;
+   top: 100%;
+   right: 0;
+   background-color:  #092635;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   z-index: 1;
+   color: whitesmoke;
+   padding: 10px;
+   border-radius: 5px;
+ }
+ 
+ .light-mode {
+  background-color: #033c58; 
+  color: whitesmoke; 
+}
+
+.light-mode .mode-toggle {
+  color: whitesmoke; 
+}
+
+.dark-mode {
+  background-color: #092635; 
+  color: whitesmoke; 
+}
+
+.mode-toggle {
+  cursor: pointer;
+  margin-right: 20px;
+  width: 30px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  
+}

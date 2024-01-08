@@ -1,3 +1,4 @@
+import React from 'react';
 import Navbar from './navbar';
 import Banner from './banner';
 import BoxComponent from './boxes';
@@ -10,6 +11,7 @@ import MyFooter from './footer';
 import './App.css';
 
 function App() {
+ 
   return (
     <div className='app'>
        <Navbar/>
